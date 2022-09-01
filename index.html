@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <pre>
+  <h1>HTML Questions</h1>
+
+ <h4> 1.Difference between Div and Span.</h4>
+  Div:
+   In HTML Div is a block level element. 
+  Div tag contains entire width.
+Span:
+ In HTML Span is a Inline element.
+ Span is not used to take entire width.
+
+<h4>2.Difference between class and IDs.</h4>
+ class:
+ In HTML multiple elements can share the same class.
+ class is not unique.
+ IDs:
+ In html id attribute is used to specify a unique id for an html element.
+  
+<h4>3.What are self closing tags </h4>
+ In html self closing tags are the type of tag that need not to be closing tag.
+ self closing tags are also known as empty tags
+ examples: img, input,br,hr
+
+  <h4>4.How many types of headings are there? how to decide which to use where.</h4>
+HTML defines six levels of headings.A heading element implies all font changes,paragraph  breaks beforeand after,and any white space necessary to render the heading.
+The heading elements are H1,H2,H3,H4,H5,H6 with H1 being the highest level and H6 the least.
+
+<h4>5.Difference between block and Inline.</h4>
+Block:
+Block Elements occupy the full width
+Block elements always start in a new line and the browser automatically add some space before and after the element.
+examples:div,p
+Inline:
+Inline elements occupy only sufficient width required.
+Inline elements does not start in a new line.
+examples: span,br
+
+<h4>6.Difference between em and strong tag.</h4>
+Strong tag :
+In Html the <strong> tag is used to define text with strong importance.
+The text inside this tag is bold
+em tag:
+The <em> tag is used to define emphasized text. 
+The content inside is typically displayed in italic.
+A screen reader will pronounce the words in <em> with an emphasis, using verbal stress.
+
+<h4>7.What are attributes?</h4>
+All HTML elements can have attributes
+Attributes provide additional information about elements
+Attributes usually come in name/value pairs like: name="value"
+
+<h4>8.Difference between HTML tags and elements.</h4>
+HTML tags:
+HTML tags start with opening <  and ends with closing >
+example:<b></b>
+ HTMLElement:
+Whatever written within a html tag are html elements elements enclose the content in between the tags.
+example:<b>This is the content</b>
+
+<h4>9. Explain br tags.</h4>
+The br tag in HTML document is used to create a line break in a text.
+It is an empty tag.
+<h4>10.What are semantic tags?</h4>
+HTML Semantic tags introduce meaning to the web page rather than just presentation. A semantic tag clearly describes its meaning to both browser and developer.
+header,nav,aside,section,article,footer.
+  <h2> Implementation:</h2>
+<h4>1.Write code to create an ordered list with roman numbers</h4>
+<h5>Ordered List with Roman Numbers</h5>
+    <ol type="I">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JAVA</li>
+        <li>NODE</li>
+    </ol>
+   <ol type="i">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JAVA</li>
+        <li>NODE</li>
+    </ol>
+  <h4>2.Write code to create an unordered list with circle </h4>
+    <h5>Unordered List with Circle Bullets</h5>
+    <ul type="circle">
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ul>  
+
+  <h4>3. Write code to create a link to https://www.prepbytes.com</h4>
+   <a href="https://www.prepbytes.com" target="_blank">Prepbytes</a>
+
+  <h4>4.Write a code to insert an image </h4>
+   <img src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/navbar/logoPrepBytes.svg" alt="prepbytes"><br>
+
+   <h2>Implementation Difficult:</h2>
+  <h4>1.Write html code to create a 2*2 table : Table columns should be name and salary , and provide two entries for this.</h4>
+<table width="50%">
+  <tr>
+  <th>Name</th>
+  <th>salary</th>
+  </tr>
+  <table border="2px" width="50%">
+    <tr>
+      <td>jyoti</td>
+      <td>20k</td>
+    </tr>
+    <tr>
+      <td>tejsi</td>
+      <td>25k</td>
+    </tr>
+  </table>
+</table>
+</pre>
+<h4>2.Create a form contain input fields like name age email and contact</h4>
+<form action="">
+  <label for="Name">Name</label>
+  <input type="text" placeholder="Name" name="Name" id="Name" autocomplete="off"  required="please fill in this form"><br><br>
+  <label for="Email">Email Address </label>
+  <input type="Email" placeholder="Email" name="Email" id="Email" autocomplete="off" required="please fill in this form"><br><br>
+  <label for="age">Age</label>
+   <input type="age" placeholder="age" name="Age" id="age" autocomplete="off"  required="please fill in this form"><br><br>
+   <label for="contact">contact</label>
+   <input type="tel" placeholder="contact" name="contact" id="contact"  autocomplete="off" required="please fill in this form"><br><br>
+   <input type="submit" value="submit">
+</form><br><br>
+
+<h4>3.Create a table and explain how to acheive colspan </h4>
+<table border="2px"width="50%">
+  <tr>
+    <th colspan="2">Name</th>
+    <th>subject</th>
+  </tr>
+  <tr>
+    <td>jyoti</td>
+    <td>varsha</td>
+    <td>science</td>
+  </tr>
+  <tr>
+    <td>ritu</td>
+    <td>tejsi</td>
+    <td>maths</td>
+  </tr>
+</table><br><br>
+
+<h4>4.Create radio button (MERN, MEAN : course)and checkbox(HTML, CSS, React, Node : technology) and explain the difference between them </h4>
+
+<form>
+  <h2>course</h2>
+  <input type="radio" id="course" name="course" value="MERN">
+  <label for="course">MERN</label><br>
+  <input type="radio" id="course" name="course" value="MEAN">
+  <label for="course">MEAN</label><br>
+
+
+</form><br>
+<form>
+  <h2>Technology</h2>
+  <form>
+    <input type="checkbox" id="technology1" name="html" value="HTML">
+    <label for="technology1"> html</label><br>
+    <input type="checkbox" id="technology2" name="css" value="CSS">
+    <label for="technology2"> CSS</label><br>
+    <input type="checkbox" id="technology3" name="react" value="REACT">
+    <label for="technology3"> react</label><br>
+    <input type="checkbox" id="technology4" name="node" value="NODE">
+    <label for="technology4"> node</label>
+  </form><br><br>
+<p>
+Radio button:	<br>
+It is used when only one option to be selected out of several available options.<br>	
+Checkbox:<br>
+Checkbox allows one or many options to be selected<br>
+</p>
+</body>
+</html
